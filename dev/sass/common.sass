@@ -1,0 +1,50 @@
+body
+  background-color: #E2EAED
+  font-family: 'Roboto'
+  font-weight: 300
+
+input, button
+  outline: none
+
+button
+  cursor: pointer
+
+.link-none
+  text-decoration: none
+  margin: 0
+  padding: 0
+  color: inherit
+
+.page
+  margin: 0px 15%
+  padding: 20px 20px
+  background-color: #fff
+  border-radius: 10px
+
+  position: relative
+  &-title
+    padding: 0 20px
+    background-color: #fff
+    display: inline-block
+    border-radius: 10px 10px 0 0
+    position: absolute
+    left: 0
+    top: -60px
+    h1
+      font-weight: 300
+      font-size: 26px
+
+.error-input
+  border: solid 1px #b86262
+
+@media (max-width: 480px)
+  .page
+    margin: 0 10px
+    &-title
+      top: -40px
+      h1
+        font-size: 20px
+      
+
+
+

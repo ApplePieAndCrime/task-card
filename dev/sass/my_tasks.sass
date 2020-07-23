@@ -1,0 +1,109 @@
+@mixin btn-event($color)
+  &:hover
+    background-color: darken($color, 5%)
+  &:active
+    background-color: darken($color, 15%)
+
+.task
+  &-commands
+    display: flex
+    justify-content: space-between
+    
+  &-input
+    border: solid 1px #b4b4b4
+    padding: 5px 15px
+    font-size: 24px
+    border-radius: 5px
+    width: 56%
+    font-weight: 300
+
+    &:hover
+      border-color: #97ceca
+    &:focus
+      border-color: #45c2b9
+
+  &-btn
+    padding: 0 20px
+    font-size: 24px
+    color: #fff
+    border: none
+    border-radius: 10px
+    
+    &-group
+      width: 40%
+      display: flex
+      justify-content: space-around
+  &-add
+    background-color: #9CF09F
+    +btn-event(#9CF09F)
+  &-edit
+    background-color: #F0DE9C
+    +btn-event(#F0DE9C)
+  &-delete
+    background-color: #F09C9C
+    +btn-event(#F09C9C)
+
+  &-list
+    padding-top: 20px
+    display: flex
+    flex-direction: column
+
+  &-el
+    position: relative
+    font-size: 22px
+    padding: 10px
+    border-radius: 3px
+    font-weight: 100
+    display: flex
+    align-items: center
+    & > label
+      width: 1em
+      height: 1em
+      border: 2px solid #38C7BE
+      border-radius: 0.25em
+      margin-right: 0.5em
+      background-color: #fff
+    & input
+      display: none
+      // checkbox is checked
+      &:checked ~ span
+        text-decoration: line-through
+        color: #c7c7c7
+      &:checked ~ label
+        border-color: #c7c7c7
+        background-color: #f0f0f0
+    & > span
+      user-select: none      
+
+.selected
+  background-color: #FCD8FD
+
+@media (max-width: 992px)
+  .task
+    &-btn
+      padding: 0 10px
+      &-group
+        width: 50%
+
+@media (max-width: 768px)
+  .task
+    &-commands
+      flex-direction: column
+      align-items: center
+    &-input
+      width: 90%
+    &-btn
+      padding: 0 30px
+      &-group
+        margin-top: 10px
+        width: 90%
+        justify-content: space-between
+
+@media (max-width: 480px)
+  .task
+    &-btn
+      padding: 0 20px
+      &-group
+        margin-top: 10px
+        width: 100%
+    

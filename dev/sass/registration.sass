@@ -1,0 +1,61 @@
+.reg
+  &-page
+    margin-top: 100px
+  &-wrapper
+    display: flex
+    flex-direction: column
+    margin: 10px 0 10px 20px
+    align-items: left
+
+  &-btn
+    display: inline
+    margin: 10px 0 0 0 
+    padding: 5px 20px
+    font-size: 24px
+    color: #fff
+    border: none
+    border-radius: 10px
+    background-color: #8CCEF3
+    box-sizing: border-box
+    align-self: center
+
+.input-wrapper
+  margin: 10px 0
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: 50%
+  & input
+    width: 70%
+    padding: 6px 20px
+    font-size: 20px
+    border: 1px solid #e2e0e0
+    border-radius: 5px
+    font-weight: 300
+    box-sizing: border-box
+    &::placeholder
+      color: #b6b6b6
+      font-style: italic
+
+.btn-wrapper
+  justify-content: center
+
+.reg-link
+  text-align: center
+  color:#8CCEF3
+  text-decoration: none
+  font-size: 14px
+
+@media (max-width: 1200px)
+  .input-wrapper
+    width: 70%     
+
+@media (max-width: 992px)
+  .reg-wrapper
+    margin-left: 0
+  .input-wrapper
+    width: 70%  
+
+@media (max-width: 767px)
+  .input-wrapper
+    width: 100%  

@@ -1,0 +1,25 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		link(rel="stylesheet", href="sass/common.sass")
+		link(rel="stylesheet", href="sass/registration.sass")
+		title Registration
+	body
+		.reg-page.page
+			.page-title
+				h1 Регистрация
+			form(name="reg_form").reg-wrapper
+				.input-wrapper
+					span Email:
+					input(name="email" type="text" placeholder="email")
+				.input-wrapper
+					span Псевдоним:
+					input(name="username" type="text" placeholder="логин")
+				.input-wrapper
+					span Пароль:
+					input(name="password" type="password" placeholder="пароль")
+				.input-wrapper.btn-wrapper
+					button.reg-btn(type="submit") зарегистрироваться
+		script(src="js/registration.js")

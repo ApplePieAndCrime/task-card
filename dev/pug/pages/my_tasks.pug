@@ -1,0 +1,32 @@
+doctype html
+html
+	include ../templates/task.pug
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		link(rel="stylesheet", href="sass/common.sass")
+		link(rel="stylesheet", href="sass/my_tasks.sass")
+		title My tasks
+	body
+		include ../templates/header.pug
+		
+		.my-tasks.page
+			.page-title
+				h1 Мои задачи
+			section.task-commands
+				input.task-input(type="text")
+				.task-btn-group
+					button.task-btn.task-add add
+					button.task-btn.task-edit edit
+					button.task-btn.task-delete delete
+			section.task-list
+				+task(1, 'выкинуть мусор')
+				+task(2, 'сходить в магазин')
+				+task(3, 'сделать зарядку',true)
+				+task(4, 'купить кофе')
+				+task(5, 'выкинуть мусор',true)
+				+task(6, 'выгулять собаку')
+				+task(7, 'починить наушники')
+				
+
+

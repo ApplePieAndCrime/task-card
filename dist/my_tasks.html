@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/my_tasks.css">
+    <title>My tasks</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="css/header.css">
+    <header>
+      <div class="auth">
+        <div class="img-wrapper-guest"></div>
+        <button class="log-btn"> <a class="link-none" href="login.html">Войти</a></button>
+      </div>
+    </header>
+    <div class="my-tasks page">
+      <div class="page-title">
+        <h1>Мои задачи</h1>
+      </div>
+      <section class="task-commands">
+        <input class="task-input" type="text">
+        <div class="task-btn-group">
+          <button class="task-btn task-add">add</button>
+          <button class="task-btn task-edit">edit</button>
+          <button class="task-btn task-delete">delete</button>
+        </div>
+      </section>
+      <section class="task-list">
+          <div class="task-el">
+            <input id="1" data-id="1" type="checkbox">
+            <label for="1"></label><span>выкинуть мусор</span>
+          </div>
+          <div class="task-el">
+            <input id="2" data-id="2" type="checkbox">
+            <label for="2"></label><span>сходить в магазин</span>
+          </div>
+          <div class="task-el">
+            <input id="3" data-id="3" type="checkbox" checked>
+            <label for="3"></label><span>сделать зарядку</span>
+          </div>
+          <div class="task-el">
+            <input id="4" data-id="4" type="checkbox">
+            <label for="4"></label><span>купить кофе</span>
+          </div>
+          <div class="task-el">
+            <input id="5" data-id="5" type="checkbox" checked>
+            <label for="5"></label><span>выкинуть мусор</span>
+          </div>
+          <div class="task-el">
+            <input id="6" data-id="6" type="checkbox">
+            <label for="6"></label><span>выгулять собаку</span>
+          </div>
+          <div class="task-el">
+            <input id="7" data-id="7" type="checkbox">
+            <label for="7"></label><span>починить наушники</span>
+          </div>
+      </section>
+    </div>
+  </body>
+</html>

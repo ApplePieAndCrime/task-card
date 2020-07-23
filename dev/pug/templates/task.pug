@@ -1,0 +1,8 @@
+mixin task(index, name, checked_val = false)
+  div.task-el
+    if(checked_val)
+      input(id=index data-id=index type="checkbox" checked)
+    else
+      input(id=index data-id=index type="checkbox")
+    label(for=index)
+    span= name

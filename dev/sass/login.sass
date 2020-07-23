@@ -1,0 +1,53 @@
+.login
+  &-page
+    margin-top: 100px
+  &-wrapper
+    display: flex
+    flex-direction: column
+    margin: 30px 6%
+    width: 35%
+    & > *
+      margin: 10px 0
+      box-sizing: border-box
+    & input
+      padding: 6px 20px
+      font-size: 20px
+      border: 1px solid #e2e0e0
+      border-radius: 5px
+      font-weight: 300
+      &::placeholder
+        color: #b6b6b6
+        font-style: italic
+
+  &-btn
+    display: inline-block
+    margin: 20px 0 0 0 
+    padding: 5px 0
+    font-size: 24px
+    color: #fff
+    border: none
+    border-radius: 10px
+    background-color: #8CCEF3
+
+.reg-link
+  text-align: center
+  color:#8CCEF3
+  text-decoration: none
+  font-size: 14px
+
+@media (max-width: 1200px)
+  .login
+    &-wrapper
+      width: 50%
+      margin: 30px auto       
+
+@media (max-width: 992px)
+  .login
+    &-wrapper
+      width: 70%
+      margin: 10px auto
+
+@media (max-width: 767px)
+  .login
+    &-wrapper
+      width: 86%
